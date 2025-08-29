@@ -1,15 +1,13 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>عبدالرحمن زيدان</title>
+    <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Story+Script&display=swap');
-
         .vyes {
             display: inline-flex;
             align-items: center;
@@ -28,185 +26,283 @@
             color: #FFD700;
             margin-left: 8px;
         }
+
+        .lang-en {
+            display: none;
+        }
+
+        .lang-switch {
+            position: fixed;
+            top: 10px;
+            left: 10px;
+            z-index: 1000;
+        }
+
+        .lang-switch button {
+            background: #FFD700;
+            border: none;
+            padding: 6px 15px;
+            border-radius: 20px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .lang-switch button:hover {
+            background: #b6932e;
+        }
     </style>
 </head>
 
 <body>
-    <!-- *//////////////////////================/////////////////////////// -->
+    <div class="lang-switch">
+        <button id="langBtn">EN</button>
+    </div>
+
     <!-- Navbar -->
     <nav class="navbar">
         <div class="logo">
-            <i class="fa-solid fa-house"></i>
+            <a href="#"><img src="img/WhatsApp Image 2025-08-26 at 15.54.32_8e6cf011.jpg" alt="Logo"></a>
         </div>
         <div class="menu-toggle" id="menu-toggle">
             <i class="fas fa-bars"></i>
         </div>
 
         <ul class="nav-links" id="nav-links">
-            <li><a href="#home">الرئيسية</a></li>
-            <li><a href="#about">من أنا</a></li>
-            <li><a href="#skills">المهارات</a></li>
-            <li><a href="#resume">السيرة الذاتية</a></li>
-            <li><a href="#contact">تواصل</a></li>
+            <li><a href="#home" class="lang-en">Home</a><a href="#home" class="lang-ar">الرئيسية</a></li>
+            <li><a href="#about" class="lang-en">About</a><a href="#about" class="lang-ar">نبذة</a></li>
+            <li><a href="#skills" class="lang-en">Skills</a><a href="#skills" class="lang-ar">المهارات</a></li>
+            <li><a href="#resume" class="lang-en">Resume</a><a href="#resume" class="lang-ar">السيرة الذاتية</a></li>
+            <li><a href="#contact" class="lang-en">Contact</a><a href="#contact" class="lang-ar">تواصل</a></li>
         </ul>
+
         <div class="social-icons">
-            <a href="https://www.facebook.com/share/1F85bSZfXp/" aria-label="Facebook"><i
+            <a href="https://www.facebook.com/share/19g5XsYUwj/?mibextid=wwXIfr" aria-label="Facebook"><i
                     class="fab fa-facebook"></i></a>
-            <a href="https://www.instagram.com/abdulrahmman_zedan?igsh=MWNjbGFsOWQ2a2g1eA==" aria-label="Instagram"><i
-                    class="fab fa-instagram"></i></a>
-            <a href="https://wa.me/201147065875" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://www.instagram.com/accountant_marina?igsh=MTJpc2xsdDc5eHNobw%3D%3D&utm_source=qr"
+                aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://wa.me/+201555311223" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
         </div>
     </nav>
-    <!-- *//////////////////////================/////////////////////////// -->
-    <!-- Header -->
+
+
     <header id="home">
         <div class="imag">
-            <img src="img/WhatsApp Image 2025-08-25 at 15.16.14_7d7f1719.jpg" alt="">
-            <div class="circle-anim one"><i class="fas fa-star"></i></div>
-            <div class="circle-anim two"><i class="fas fa-car"></i></div>
-            <div class="circle-anim three"><i class="fas fa-rocket"></i></div>
+            <img  class="fade-down" src="img/WhatsApp Image 2025-08-26 at 15.52.09_182f9fcd.jpg" alt="Profile Picture">
+            <span class="circle-anim one"><i class="fab fa-instagram"></i></span>
+            <span class="circle-anim two"><i class="fab fa-whatsapp"></i></span>
+            <span class="circle-anim three"><i class="fab fa-facebook"></i></span>
         </div>
 
         <div class="image-right">
             <div class="hero">
                 <h1>
-                    مرحبًا، أنا <span class="name" style="color:#ae960d; font-size:40px;">عبدالرحمن زيدان</span>
+                    <span   class="lang-en">Hi, I'm <span class="name" style="color:#ae960d; font-size:40px;">Mohammed Abd
+                            El-Hamid</span></span>
+                    <span class="lang-ar">مرحبًا، أنا <span class="name" style="color:#ae960d; font-size:40px;">محمد عبد
+                            الحميد</span></span>
                     <p class="vyes">✔</p>
                 </h1>
-                <a href="#resume" class="btn">السيرة الذاتية</a> 
+                <p class="lang-en">ACCOUNTANT <span class="ixi">(Marina El Alamein Tourist Center )</span><span></span></p>
+                <p class="lang-ar">محاسب <span class="ixi">(شركة التعمير للتنمية والإدارة السياحية – مركز مارينا
+                        السياحي)</span></p>
             </div>
         </div>
     </header>
-    <!-- *//////////////////////================/////////////////////////// -->
-    <!-- About -->
+
+
     <section id="about" class="section">
-        <h2>من أنا</h2>
-        <p>
-            عبدالرحمن أحمد زيدان.. نموذج للشباب الواعد في العلم والعمل العام
-            <br><br>
-            <strong>البدايات والطموح</strong><br>
-            وُلد عبدالرحمن أحمد زيدان في 27 ديسمبر 2004، ونشأ على حب الوطن والاعتزاز بالهوية المصرية. منذ صغره كان
-            شغوفًا بتاريخ مصر العريق وحضارتها، وهو ما دفعه لاختيار دراسة الآثار المصرية، سعيًا لحمل رسالة الحفاظ على
-            تراث الأجداد وتعريف العالم به.
-            <br><br>
-            <strong>المسيرة الأكاديمية والعملية</strong><br>
-            يواصل عبدالرحمن أحمد زيدان دراسته في قسم الآثار المصرية، مؤكدًا إصراره على الجمع بين التفوق العلمي والتطبيق
-            العملي. ويعمل في وزارة السياحة والآثار، وهو ما يمنحه خبرة واقعية مبكرة تثري دراسته الأكاديمية وتفتح أمامه
-            آفاقًا واسعة في مجاله.
-            <br><br>
-            <strong>الانخراط المجتمعي والسياسي</strong><br>
-            لم يقتصر دور عبدالرحمن أحمد زيدان على الجانب الأكاديمي، بل برز أيضًا كأحد الوجوه النشطة في خدمة المجتمع. فهو
-            عضو اتحاد الأثريين المصريين، وعضو هيئة مكتب حزب مستقبل وطن – مركز المحمودية، حيث يشارك بفاعلية في المبادرات
-            والأنشطة التي تستهدف دعم الشباب والمساهمة في بناء وطن أقوى.
-            <br><br>
-            <strong>رؤية مستقبلية</strong><br>
-            يحمل عبدالرحمن أحمد زيدان رؤية واضحة لمستقبله، إذ يؤمن بأن الشباب هم حجر الأساس في نهضة مصر. لذلك يسعى إلى
-            أن يكون قدوة لجيله، من خلال الجمع بين الدراسة والعمل والمشاركة المجتمعية، مؤكدًا أن خدمة الوطن شرف لا يقتصر
-            على مجال واحد، بل هو التزام في كل ميدان.
+        <h2><span class="lang-en">About Me</span><span class="lang-ar">نبذة عني</span></h2>
+        <p class="lang-en">
+            Accountant with experience in managing general accounts, bank reconciliations, and preparing periodic
+            financial
+            reports. Skilled in recording financial transactions accurately and analyzing data to support
+            decision-making.
+        </p>
+        <p class="lang-ar">
+            محاسب بخبرة في إدارة الحسابات العامة، والتسويات البنكية، وإعداد التقارير المالية الدورية. متمكن من تسجيل
+            المعاملات المالية بدقة وتحليل البيانات لدعم اتخاذ القرار.
         </p>
     </section>
-    <!-- *//////////////////////================/////////////////////////// -->
-    <!-- Skills -->
-    <section class="section" id="skills">
-        <h2 class="title">المهارات</h2>
-        <div class="content">
 
+
+    <section class="section" id="skills">
+        <h2 class="title"><span class="lang-en">Skills</span><span class="lang-ar">المهارات</span></h2>
+        <div class="content">
             <div class="card">
                 <div class="icon">📝</div>
                 <div class="info">
-                    <h3>وورد</h3>
-                    <p>متمكن من إنشاء وتنسيق وتحرير المستندات باستخدام مايكروسوفت وورد.</p>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="icon"><i class="fa-solid fa-chart-line"></i></div>
-                <div class="info">
-                    <h3>بوربوينت</h3>
-                    <p>ماهر في تصميم عروض تقديمية جذابة باستخدام مايكروسوفت بوربوينت، مع دمج عناصر الوسائط المتعددة.</p>
+                    <h3><span class="lang-en">Word</span><span class="lang-ar">وورد</span></h3>
+                    <p class="lang-en">Proficient in creating, formatting, and editing documents using Microsoft Word.
+                    </p>
+                    <p class="lang-ar">متمكن من إنشاء وتنسيق وتحرير المستندات باستخدام مايكروسوفت وورد.</p>
                 </div>
             </div>
 
             <div class="card">
                 <div class="icon"><i class="fa-solid fa-table"></i></div>
                 <div class="info">
-                    <h3>مواقع التواصل الاجتماعي</h3>
-                    <p>إدارة حسابات التواصل الاجتماعي (Facebook, Instagram, X, TikTok)</p>
+                    <h3><span class="lang-en">Excel</span><span class="lang-ar">إكسل</span></h3>
+                    <p class="lang-en">Experienced in using Excel for data analysis, creating spreadsheets, and
+                        generating reports.</p>
+                    <p class="lang-ar">خبرة في استخدام إكسل لتحليل البيانات، وإنشاء الجداول، وإعداد التقارير.</p>
                 </div>
             </div>
-
         </div>
     </section>
 
-    <!-- Resume --><!-- *//////////////////////================/////////////////////////// -->
+    <!-- Resume -->
     <section id="resume" class="section">
         <div class="wrap">
-            <h2 class="title">السيرة الذاتية</h2>
+            <h1 class="title"><span class="underline" style="color: #FFD700;"><span class="lang-en">My
+                        Resume</span><span class="lang-ar">السيرة الذاتية</span></span></h1>
 
-            <div class="panel">
-                <p class="lead">
-                    إليك نظرة عامة سريعة عن خبراتي ومهاراتي. يمكنك تحميل النسخة الكاملة من سيرتي الذاتية.
-                </p>
+            <section class="panel">
+                <p class="lead lang-en">Here is a brief overview of my professional background and skills. You can
+                    download the full version of my CV.</p>
+                <p class="lead lang-ar">إليك نظرة عامة سريعة عن خبراتي ومهاراتي. يمكنك تحميل النسخة الكاملة من سيرتي
+                    الذاتية.</p>
 
                 <div class="grid">
-
                     <div>
-                        <h3 class="section-title">الملخص</h3>
-                        <p class="summary">
-                            لدي خبرة عملية بجانب الدراسة الأكاديمية في مجال التراث والآثار.
-                        </p>
+                        <h3 class="section-title lang-en">Summary</h3>
+                        <h3 class="section-title lang-ar">الملخص</h3>
+                        <p class="summary lang-en">Accountant at Marina El Alamein Tourist Center with experience in
+                            financial reporting, accounts management, and data analysis.</p>
+                        <p class="summary lang-ar">محاسب في مركز مارينا السياحي بخبرة في التقارير المالية، وإدارة
+                            الحسابات، وتحليل البيانات.</p>
                     </div>
 
-                    <!-- المهارات الرئيسية -->
                     <div>
-                        <h3 class="section-title">المهارات الرئيسية</h3>
-                        <ul class="skills">
-                            <li>إدارة الوقت وتنظيم المهام</li>
-                            <li>التواصل الفعّال والعمل الجماعي</li>
-                            <li>إعداد التقارير والعروض التقديمية</li>
-                            <li>إكسل (تحليل بيانات – جداول محورية)</li>
-                            <li>وورد (كتابة وتنسيق تقارير)</li>
-                            <li>إدارة حسابات التواصل الاجتماعي</li>
+                        <h3 class="section-title lang-en">Key Skills</h3>
+                        <h3 class="section-title lang-ar">المهارات الرئيسية</h3>
+                        <ul class="skills lang-en">
+                            <li>Financial reporting & bookkeeping</li>
+                            <li>Accounts payable & receivable</li>
+                            <li>Budget preparation & cost control</li>
+                            <li>MS Excel (Formulas, Pivot Tables, Data Analysis)</li>
+                            <li>MS Word (Reports & Documentation)</li>
+                            <li>Accountant – Collections Department</li>
+
+
+
+
+
+                        </ul>
+                        <ul class="skills lang-ar">
+                            <li>التقارير المالية ومسك الدفاتر</li>
+                            <li>الحسابات الدائنة والمدينة</li>
+                            <li>إعداد الميزانيات والرقابة على التكاليف</li>
+                            <li>إكسل (معادلات، جداول محورية، تحليل البيانات)</li>
+                            <li>وورد (تقارير وتوثيق)</li>
+                            <li>محاسب – بقسم التحصيلات</li>
                         </ul>
                     </div>
                 </div>
-            </div>
-
-            <!-- زر الطباعة -->
-            <div class="actions" style="margin-top:20px; text-align:center;">
-                <button class="btn" class="btn" onclick="window.print()">🖨 طباعة السيرة الذاتية</button>
-            </div>
+            </section>
+        </div>
+        <div class="actions">
+            <button class="btn" onclick="window.print()">🖨 <span class="lang-en">Print Resume</span><span
+                    class="lang-ar">طباعة السيرة الذاتية</span></button>
         </div>
     </section>
 
-    <!-- Contact -->
     <section id="contact" class="section contact">
-        <h2>تواصل معي</h2>
-        <p>متاح للعمل الحر.</p>
-        <a href="mailto:abdoazedan770@gmail.com" class="btn">abdoazedan770@gmail.com</a>
-        <a href="tel:+201147065875" class="btn">01147065875</a>
+        <h2><span class="lang-en">Contact Me</span><span class="lang-ar">تواصل معي</span></h2>
+        <p class="lang-en">Available for freelance work.</p>
+        <p class="lang-ar">متاح للعمل الحر.</p><br>
+        <a href="mailto:www.samka.com@icloud.com" class="btn">www.samka.com@icloud.com</a>
+        <a href="tel:+201555311223" class="btn">01555311223</a>
     </section>
+
 
     <footer>
-        <p>©© 2025 Mohmed Adel Amer. All Rights Reserved.0 </p>
-        <div class="social-icons-footer">
-            <a href="https://wa.me/201208248081" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
-            -
-            <a href="https://www.linkedin.com/in/mohamed-amer-503099309" aria-label="LinkedIn"><i
-                    class="fab fa-linkedin"></i></a>
-
+        <p><span class="lang-en">&copy; 2025 Mohammed Abd El-Hamid.</span><span class="lang-ar">&copy; 2025 محمد عبد
+                الحميد.</span></p>
+        <div class="social-icons" id="footer-social-icons">
+            <a href="https://www.facebook.com/share/19g5XsYUwj/?mibextid=wwXIfr" aria-label="Facebook"><i
+                    class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com/accountant_marina?igsh=MTJpc2xsdDc5eHNobw%3D%3D&utm_source=qr"
+                aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://wa.me/+201555311223" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
         </div>
     </footer>
-
     <script>
+
         const menuToggle = document.getElementById("menu-toggle");
         const navLinks = document.getElementById("nav-links");
-
 
         menuToggle.addEventListener("click", () => {
             navLinks.classList.toggle("active");
         });
+
+        function setLanguage(lang) {
+            if (lang === 'en') {
+                document.querySelectorAll('.lang-en').forEach(el => el.style.display = 'inline');
+                document.querySelectorAll('.lang-ar').forEach(el => el.style.display = 'none');
+                document.documentElement.lang = 'en';
+                document.documentElement.dir = 'ltr';
+                langBtn.textContent = "AR";   // زر يتحول للعربي
+                localStorage.setItem("siteLang", "en");
+            } else {
+                document.querySelectorAll('.lang-en').forEach(el => el.style.display = 'none');
+                document.querySelectorAll('.lang-ar').forEach(el => el.style.display = 'inline');
+                document.documentElement.lang = 'ar';
+                document.documentElement.dir = 'rtl';
+                langBtn.textContent = "EN";   // زر يتحول للإنجليزي
+                localStorage.setItem("siteLang", "ar");
+            }
+        }
+
+        // عند الضغط على الزر
+        langBtn.addEventListener("click", () => {
+            const currentLang = document.documentElement.lang;
+            setLanguage(currentLang === "ar" ? "en" : "ar");
+        });
+
+        // تحميل اللغة المختارة سابقاً أو الافتراضي (إنجليزي)
+        window.onload = () => {
+            const savedLang = localStorage.getItem("siteLang") || "en"; // الأساسي إنجليزي
+            setLanguage(savedLang);
+        };
+
+
+
+
+        // كل العناصر اللي عليها الكلاس fade-down
+        const fadeElements = document.querySelectorAll('.fade-down');
+
+        function showOnScroll() {
+            fadeElements.forEach(el => {
+                const rect = el.getBoundingClientRect();
+                if (rect.top < window.innerHeight - 50) {
+                    el.classList.add('show');
+                }
+            });
+        }
+
+        // أول تحميل + عند الاسكرول
+        window.addEventListener('scroll', showOnScroll);
+        window.addEventListener('load', showOnScroll);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     </script>
+
 
 </body>
 
